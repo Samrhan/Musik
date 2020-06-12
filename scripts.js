@@ -1,3 +1,4 @@
+const key = "TOKEN"; // Token : NE PAS PARTAGER
 // Contient toutes les fonctions javascripts
 
 // Fonctions utilitaires
@@ -163,7 +164,6 @@ async function search_yt() {
         const max = 10;
         const part = "snippet";
         const type = "video";
-        const key = "AIzaSyBuVALnsrj1QfjbfzlxMSSW0k51QFcCp9k"; // Token : NE PAS PARTAGER
         let base = "https://www.googleapis.com/youtube/v3";
         let request = new XMLHttpRequest();
         let table = document.getElementById("results")
