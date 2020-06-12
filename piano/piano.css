@@ -1,11 +1,21 @@
-#piano{
+#piano {
     display: flex;
 }
-.notes{
+
+@media (max-width: 1000px) {
+    /* Affichage mobile*/
+    #second_piano {
+        display: none;
+    }
+}
+
+
+.notes {
     position: relative;
     padding-top: 15px;
     padding-right: 4px;
 }
+
 .Do_Note {
     color: black;
     position: relative;
@@ -73,7 +83,7 @@
 .Cs_Note {
     position: absolute;
     z-index: 52;
-    left:40px;
+    left: 40px;
     padding: 180px 20px 20px 18px;
     background-color: black;
     color: White;
