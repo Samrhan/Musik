@@ -1,4 +1,6 @@
 // Contient toutes les fonctions javascripts
+const key = "AIzaSyBuVALnsrj1QfjbfzlxMSSW0k51QFcCp9k"; // Token : NE PAS PARTAGER
+
 
 // Fonctions utilitaires
 function decodeURL(encoded) {
@@ -186,7 +188,6 @@ async function search_yt() {
         const max = 10;
         const part = "snippet";
         const type = "video";
-        const key = "AIzaSyBuVALnsrj1QfjbfzlxMSSW0k51QFcCp9k"; // Token : NE PAS PARTAGER
         let base = "https://www.googleapis.com/youtube/v3";
         let request = new XMLHttpRequest();
         let table = document.getElementById("results")
