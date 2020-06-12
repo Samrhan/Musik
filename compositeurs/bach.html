@@ -7,10 +7,12 @@
     <script type="text/javascript" src="../scripts.js"></script>
 
 </head>
-<body id="body">
+<div id="mobile-menu"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+        alt="menu" onclick="mobile_menu()"></div>
 <header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
     <nav>
-        <ul class="liste">
+        <ul class="liste" id="liste">
             <li class="onglet" id="ong_compositeurs">
                 <a onmouseover="display_scrolling_menu('black', '../')">Compositeurs</a></li>
             <li class="onglet" id="ong_groupes">
@@ -23,8 +25,8 @@
         </ul>
     </nav>
 </header>
-<div class="scroll-windows" onmouseover="disable_menu()">
-    <div class="main-box" id="scroll">
+<div class="scroll-windows" onmouseover="disable_menu()"id="scroll">
+    <div class="main-box" id="scroll-begin">
         <div class="main-text"><h1>Jean-Sébastien Bach</h1>
             <p><em> « Le but de la musique devrait n'être que la gloire de Dieu et le délassement des âmes. <br>Si l'on
                 ne
@@ -32,7 +34,7 @@
                 ».</em>
             </p>
             <div class="main-button">
-                <button type="button" id="black-button" style="font-size: 17px;"
+                <button type="button" id="black-button"
                         onclick="document.getElementById('bach').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
                     Biographie
                 </button>

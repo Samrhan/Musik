@@ -8,9 +8,12 @@
 
 </head>
 <body id="body">
+<div id="mobile-menu"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+        alt="menu" onclick="mobile_menu()"></div>
 <header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
     <nav>
-        <ul class="liste">
+        <ul class="liste" id="liste">
             <li class="onglet" id="ong_compositeurs">
                 <a onmouseover="display_scrolling_menu('#c4302b', '../')">Compositeurs</a></li>
             <li class="onglet" id="ong_groupes">
@@ -23,13 +26,13 @@
         </ul>
     </nav>
 </header>
-<div class="scroll-windows" onmouseover="disable_menu()">
-    <div class="main-box" id="scroll">
+<div class="scroll-windows" onmouseover="disable_menu()" id="scroll">
+    <div class="main-box" id="scroll-begin">
         <div class="main-text"><h1>Queen</h1>
             <p><em>«The reason we're successful, darling? My overall charisma, of course.» <br>Freddie Mercury.</em>
             </p>
             <div class="main-button">
-                <button type="button" id="red-button" style="font-size: 17px;"
+                <button type="button" id="red-button"
                         onclick="document.getElementById('queen').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
                     Biographie
                 </button>
@@ -48,7 +51,8 @@
                     vendu plus de 300 millions d'albums à l'échelle internationale en 2009, dont 32,5 millions aux
                     États-Unis.<br>
                     En 1991, le groupe fait face à la mort prématurée de Freddie Mercury (atteint du virus du sida),
-                    chanteur et icône de la formation. Selon un sondage d'opinion commandé au Royaume-Uni par la BBC Two et paru en
+                    chanteur et icône de la formation. Selon un sondage d'opinion commandé au Royaume-Uni par la BBC Two
+                    et paru en
                     2007, Queen est considéré comme étant le « meilleur groupe britannique de tous les temps »,
                     devançant les Beatles et les Rolling Stones.<br>
                     <iframe src="https://open.spotify.com/embed/track/1lCRw5FEZ1gPDNPzy1K4zW" width="500" height="80"

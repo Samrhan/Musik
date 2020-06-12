@@ -1,4 +1,3 @@
-const key = "TOKEN"; // Token : NE PAS PARTAGER
 // Contient toutes les fonctions javascripts
 
 // Fonctions utilitaires
@@ -25,6 +24,8 @@ async function play_sound(name) { // Joue un son pour le piano
 
 
 // Fonctions d'affichage
+let mobile = false;
+
 function hide_rgpd() { // Cacher le popup cookie
     document.getElementById("CookieSecure").style.display = "none";
 }
@@ -69,7 +70,7 @@ function show_sociaux() {
     tab[0].classList.add("reseaux");
     let img = [];
     img.push(document.createElement("img"));
-    img[0].setAttribute("style","width: 60px;padding-right: 10px;");
+    img[0].setAttribute("style", "width: 60px;padding-right: 10px;");
     img[0].src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png";
     img[0].alt = 'github';
     let name = [];
@@ -77,13 +78,34 @@ function show_sociaux() {
     name[0].href = "https://github.com/Samrhan/Musik";
     name[0].target = "_blank";
     name[0].append(document.createTextNode("Github"));
-    for(let i =0; i < tab.length; i++){
+    for (let i = 0; i < tab.length; i++) {
         tab[i].appendChild(img[i])
         tab[i].appendChild(name[i])
         div.appendChild(tab[i])
     }
     parent.appendChild(div);
 
+}
+
+function mobile_menu() {
+    let scroll = document.getElementById("scroll");
+    let menu = document.getElementById("header");
+    let piano = document.getElementById("main-piano");
+    console.log(menu.style.display);
+    if (!menu.style.display || menu.style.display === "none") {
+
+        if (piano) {
+            piano.style.display = 'none';
+        }
+        menu.style.display = "flex";
+        scroll.style.top = "520px";
+    } else {
+        if (piano) {
+            piano.style.display = 'block';
+        }
+        menu.style.display = "none";
+        scroll.style.top = "0";
+    }
 }
 
 
@@ -120,7 +142,7 @@ function display_scrolling_menu(color = "black", path = "", onglet_str = "ong_co
             }
             if (window.location.pathname.indexOf(list[i].file) !== -1) {
                 tab_compo[i].onclick = () => // Si l'utilisateurs demande la même page, on fait simplment un scrolling vers le haut
-                    document.getElementById('scroll').scrollIntoView({
+                    document.getElementById('scroll-begin').scrollIntoView({
                         behavior: 'smooth',
                         block: 'start',
                         inline: 'start'
@@ -164,6 +186,7 @@ async function search_yt() {
         const max = 10;
         const part = "snippet";
         const type = "video";
+        const key = "AIzaSyBuVALnsrj1QfjbfzlxMSSW0k51QFcCp9k"; // Token : NE PAS PARTAGER
         let base = "https://www.googleapis.com/youtube/v3";
         let request = new XMLHttpRequest();
         let table = document.getElementById("results")

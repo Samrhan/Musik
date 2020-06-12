@@ -9,10 +9,12 @@
 
     </script>
 </head>
-<body id="body">
-<header class="pannel-onglets"><span class="name"><a href="../index.html">MUSIK</a></span>
+<div id="mobile-menu"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+        alt="menu" onclick="mobile_menu()"></div>
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
     <nav class="liste-onglets">
-        <ul class="liste">
+        <ul class="liste" id="liste">
             <li class="onglet" id="ong_compositeurs">
                 <a onmouseover="display_scrolling_menu('#c4302b', '../')">Compositeurs</a></li>
             <li class="onglet" id="ong_groupes">
@@ -27,9 +29,10 @@
 </header>
 <div class="scroll-windows" onmouseover="disable_menu()">
     <div class="main-text"><h1>Recherche</h1>
-        <label for="search"></label><input type="text" id="search" name="search" placeholder="Nom de la musique..." onfocus="listen(search_yt);">
+        <label for="search"></label><input type="text" id="search" name="search" placeholder="Nom de la musique..."
+                                           onfocus="listen(search_yt);">
         <div class="main-button">
-            <button type="button" id="red-button" style="font-size: 17px;" onclick="search_yt()"><img
+            <button type="button" id="red-button"  onclick="search_yt()"><img
                     src="../assets/youtube.png" alt="note"
                     style="margin-right: 15px;">Rechercher
             </button>

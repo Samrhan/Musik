@@ -110,6 +110,7 @@ header {
     list-style: none;
 }
 
+
 .onglet a {
     font-size: 13px;
     letter-spacing: .59px;
@@ -121,6 +122,47 @@ header {
     opacity: 0.7;
     text-decoration: none;
     padding: 15px 10px;
+}
+
+@media (max-width: 1000px) {
+    /* Affichage mobile*/
+    .onglet {
+        display: flex;
+    }
+
+    .onglet a {
+        font-size: 35px;
+    }
+
+    .pannel-onglets .name a {
+        font-size: 51px;
+    }
+
+    #header {
+        padding-top: 20px;
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    #mobile-menu img {
+        width: 100px;
+    }
+
+    #liste {
+        flex-direction: column;
+    }
+    .scroll-windows{
+        height: 92%;
+    }
+}
+
+@media (min-width: 1000px) {
+    /* Affichage mobile*/
+    #mobile-menu {
+        display: none;
+    }
 }
 
 .main-box {
@@ -208,6 +250,36 @@ header {
     height: auto;
 }
 
+@media (max-width: 1000px) {
+    /* Affichage mobile*/
+    .main-text p {
+        font-size: 30px;
+    }
+
+    .main-text h1 {
+        font-size: 50px;
+    }
+
+    .main-button {
+        width: 500px;
+    }
+
+    .main-button button {
+        height: 100px;
+        font-size: 50px;
+    }
+
+    #search {
+        width: 90%;
+        height: 60px;
+    }
+}
+
+.main-box {
+    padding: 15% 0 20%;
+}
+
+
 .Section {
     display: flex;
     justify-content: center;
@@ -228,12 +300,6 @@ header {
     align-items: center;
     max-width: 1440px;
     flex-direction: row-reverse; /*il suffirait d'inverser l'image et le texte en html*/
-}
-
-@media (max-width: 1000px) { /* Affichage mobile*/
-    .SectionInner {
-        flex-direction: column;
-    }
 }
 
 .SectionImg {
@@ -272,6 +338,26 @@ header {
     color: #969899;
     line-height: 1.8em;
     margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+    /* Affichage mobile*/
+    .SectionInner {
+        flex-direction: column;
+    }
+
+    .SectionText {
+        padding-right: 0;
+    }
+
+    .SectionText h1 {
+        font-size: 51px;
+    }
+
+    .SectionText p {
+        font-size: 30px;
+        text-align: justify;
+    }
 }
 
 table {
@@ -321,7 +407,6 @@ footer {
     padding: 0 5px;
 }
 
-
 .footer-item {
     height: 15px;
     letter-spacing: 1px;
@@ -329,8 +414,10 @@ footer {
     padding-right: 8px;
     padding-left: 8px;
     padding-bottom: 10px;
+    font-family: Avenir Light, serif;
+    font-size: 13px;
+    display: flex;
 }
-
 
 .footer-item a {
     color: white;
@@ -350,10 +437,16 @@ footer {
     border-left: 1px solid #fff;
 }
 
-.footer-item {
-    font-family: Avenir Light, serif;
-    font-size: 13px;
-    display: flex;
+@media (max-width: 1000px) {
+    /* Affichage mobile*/
+    footer{
+        bottom: 40px;
+        width: 100%;
+    }
+    .footer-item {
+        border-top: 1px solid #fff;
+        font-size: 30px;
+    }
 }
 
 #CookieSecure {
@@ -388,6 +481,17 @@ footer {
 #CookieSecure a {
     text-decoration: underline;
     color: #323232;
+}
+
+@media (max-width: 1000px) {
+    /* Affichage mobile*/
+    #CookieSecure {
+        font-size: 30px;
+    }
+
+    #CookieSecure #okcookie {
+        font-size: 50px;
+    }
 }
 
 .popup_yt {
@@ -432,7 +536,6 @@ footer {
 .menu-deroulant {
     width: 10%;
     position: fixed;
-    font-size: 0.875rem;
     border-radius: 4px;
     z-index: -1;
 }
@@ -442,6 +545,20 @@ footer {
     font-weight: 400;
     padding: 10px 0 0 10px;
     font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    .menu-deroulant{
+        left:40%;
+        width: 30%;
+        border-radius: 20px;
+    }
+    .menu-deroulant a {
+        padding-bottom: 20px;
+        font-size: 30px;
+        font-family: Avenir Black, sans-serif;
+        font-weight: 400;
+    }
 }
 
 .popup {
@@ -478,14 +595,9 @@ footer {
     height: 30%;
     width: 10vw;
 }
-@media (max-width: 1000px) { /* Affichage mobile*/
-    .sociaux_windows {
-        height: 30%;
-        width: 60vw;
-    }
-}
 
-.reseaux{
+
+.reseaux {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,14 +613,31 @@ footer {
     letter-spacing: 1.4px;
     font-weight: 400;
 }
-.reseaux a{
+
+.reseaux a {
     font-family: Avenir Light, serif;
     text-decoration: none;
-    color : white;
+    color: white;
 }
 
-.reseaux a:hover{
+.reseaux a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    /* Affichage mobile*/
+    .sociaux_windows {
+        height: 30%;
+        width: 60vw;
+    }
+
+    .sociaux_windows h1 {
+        font-size: 30px;
+    }
+
+    .reseaux a {
+        font-size: 18px;
+    }
 }
 
 .sociaux_close {
