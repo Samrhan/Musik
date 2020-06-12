@@ -7,10 +7,13 @@
     <script type="text/javascript" src="../scripts.js"></script>
 </head>
 
-<body style="overflow-y: hidden;" id="scroll">
-<header class="pannel-onglets"><span class="name"><a href="../index.html">MUSIK</a></span>
+<body style="overflow-y: hidden;">
+<div id="mobile-menu"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+        alt="menu" onclick="mobile_menu()"></div>
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
     <nav class="liste-onglets">
-        <ul class="liste">
+        <ul class="liste" id="liste">
             <li class="onglet" id="ong_compositeurs">
                 <a onmouseover="display_scrolling_menu('black', '../')">Compositeurs</a></li>
             <li class="onglet" id="ong_groupes">
@@ -24,7 +27,7 @@
     </nav>
 </header>
 
-<div class="main-box" onmouseover="disable_menu()">
+<div class="main-box" onmouseover="disable_menu()" id="main-piano">
     <div class="main-text"><h1>Piano Interactif</h1>
         <div id="piano">
             <div class="notes">
