@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Musik</title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <script type="text/javascript" src="../scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body id="body">
+<header class="pannel-onglets"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav class="liste-onglets">
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('white', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('white', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" id="scroll"  onmouseover="disable_menu()">
+    <div class="main-text"><h1>Recherche</h1>
+        <label for="search"></label><input type="text" id="search" name="search" placeholder="Nom de la musique..." onfocus="listen(search_lyrics);">
+        <div class="main-button">
+            <button type="button" id="black-button" style="font-size: 17px;" onclick="search_lyrics()"><img
+                    src="../assets/micro.png"
+                    alt="note"
+                    style="margin-right: 15px;">Rechercher
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+</body>
+
+</html>

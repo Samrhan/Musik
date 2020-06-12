@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="../scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('black', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('black', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box" id="scroll">
+        <div class="main-text"><h1>Metallica</h1>
+            <p><em> « I wanted to make noise, not study theory. »<br> James Hetfield.</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="black-button" style="font-size: 17px;"
+                        onclick="document.getElementById('metallica').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
+                    Biographie
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="metallica">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Metallica</h1>
+                <p>Metallica est un groupe de thrash metal américain originaire de Californie. Formé à Los Angeles en
+                    1981, le groupe est composé actuellement de deux de ses membres fondateurs, James Hetfield (chant,
+                    guitare rythmique) et Lars Ulrich (batterie), ainsi que du guitariste Kirk Hammett (arrivé en 1983)
+                    et du bassiste Robert Trujillo, qui rejoindra le groupe en 2003. Les précédents membres du groupe
+                    incluent Dave Mustaine (après son exclusion, membre fondateur de Megadeth), les bassistes Ron
+                    McGovney (uniquement pour les démos), Cliff Burton (pour les trois premiers albums ; décédé en 1986)
+                    et Jason Newsted (prenant la suite de Burton et remplacé en 2003 par Trujillo). Le groupe a
+                    longtemps collaboré avec le producteur Bob Rock, qui a produit tous leurs albums de 1990 à 2003 et
+                    est devenu temporairement le bassiste du groupe, entre le départ de Newsted et l'arrivée de
+                    Trujillo. Le groupe se forme au début des années 1980 lorsque Hetfield se rend à une annonce postée
+                    dans un journal local par le batteur Lars Ulrich.
+                    <iframe src="https://open.spotify.com/embed/track/2MuWTIM3b0YEAskbeeFE1i" width="500" height="80"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br><em style="font-size: 15px;">Master of Puppets, Metallica</em>
+                </p>
+            </div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://images-na.ssl-images-amazon.com/images/I/51Jz4-FHMvL._AC_.jpg"
+                    alt="Classique"></div>
+
+        </div>
+    </section>
+
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+
+</body>
+</html>

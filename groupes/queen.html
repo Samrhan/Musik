@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="../scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('#c4302b', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('#c4302b', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box" id="scroll">
+        <div class="main-text"><h1>Queen</h1>
+            <p><em>«The reason we're successful, darling? My overall charisma, of course.» <br>Freddie Mercury.</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="red-button" style="font-size: 17px;"
+                        onclick="document.getElementById('queen').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
+                    Biographie
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="queen">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Queen</h1>
+                <p>Queen [kwiːn] est un groupe de rock britannique, originaire de Londres, en Angleterre. Il est formé
+                    en 1970 par Freddie Mercury, Brian May et Roger Taylor, ces deux derniers étant issus du groupe
+                    Smile. L’année suivante, le bassiste John Deacon vient compléter la formation. Les quatre membres de
+                    Queen sont tous des auteurs-compositeurs.<br>Grâce à son succès et à son influence, Queen est
+                    considéré comme étant l'un des plus grands groupes de rock britannique de l'histoire. La formation a
+                    vendu plus de 300 millions d'albums à l'échelle internationale en 2009, dont 32,5 millions aux
+                    États-Unis.<br>
+                    En 1991, le groupe fait face à la mort prématurée de Freddie Mercury (atteint du virus du sida),
+                    chanteur et icône de la formation. Selon un sondage d'opinion commandé au Royaume-Uni par la BBC Two et paru en
+                    2007, Queen est considéré comme étant le « meilleur groupe britannique de tous les temps »,
+                    devançant les Beatles et les Rolling Stones.<br>
+                    <iframe src="https://open.spotify.com/embed/track/1lCRw5FEZ1gPDNPzy1K4zW" width="500" height="80"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br><em style="font-size: 15px;">We are the champions, Queen</em>
+                </p>
+            </div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://i.skyrock.net/4392/29354392/pics/983010946_small.jpg"
+                    alt="Classique"></div>
+        </div>
+    </section>
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+
+</body>
+</html>

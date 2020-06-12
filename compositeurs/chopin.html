@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="../scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('#c4302b', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('#c4302b', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box" id="scroll">
+        <div class="main-text"><h1>Chopin</h1>
+            <p><em> « C'est affreux quand quelque chose vous préoccupe, de ne pas avoir une âme à laquelle vous
+                décharger. <br> Tu sais ce que je veux dire. Je raconte à mon piano les choses que je te disais. ».</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="red-button" style="font-size: 17px;"
+                        onclick="document.getElementById('chopin').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
+                    Biographie
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="chopin">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Chopin</h1>
+                <p>Frédéric François Chopin (né sous le nom polonais : Fryderyk Franciszek Chopin, parfois polonisé
+                    Szopen ; au xixe siècle, la graphie Szopę a été utilisée en Pologne en concurrence avec la graphie
+                    Chopin) est un compositeur et pianiste virtuose d'ascendance franco-polonaise, né en 1810 à
+                    Żelazowa Wola, sur le territoire du duché de Varsovie (actuellement en Pologne), et mort en 1849 à
+                    Paris.
+                    <br>
+                    Issu du côté de son père d'une famille lorraine originaire de Marainville-sur-Madon, après sa
+                    formation au Conservatoire de Varsovie et un début de carrière en Pologne et à Vienne, il choisit
+                    d'émigrer en France où il développe son inspiration dans l'effervescence du monde pianistique
+                    parisien et dans le souvenir de sa patrie meurtrie. Il y rencontre George Sand, qui sera sa compagne
+                    pendant neuf ans.
+                    <iframe src="https://open.spotify.com/embed/track/1UmeITeHm0pLprJRpbmyWD" width="500" height="80"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br><em style="font-size: 15px;">Ballade No.1 Op.23, Frédéric Chopin</em>
+                </p>
+            </div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Chopin%2C_by_Wodzinska.JPG/220px-Chopin%2C_by_Wodzinska.JPG"
+                    alt="Classique"></div>
+
+        </div>
+    </section>
+
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+</body>
+</html>

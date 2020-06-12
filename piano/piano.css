@@ -1,0 +1,129 @@
+#piano{
+    display: flex;
+}
+.notes{
+    position: relative;
+    padding-top: 15px;
+    padding-right: 4px;
+}
+.Do_Note {
+    color: black;
+    position: relative;
+    padding: 258px 27px 27px;
+    z-index: 50;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Re_Note {
+    position: relative;
+    z-index: 51;
+    color: black;
+    padding: 258px 27px 27px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Mi_Note {
+    position: relative;
+    z-index: 53;
+    color: black;
+    padding: 258px 27px 27px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Fa_Note {
+    position: relative;
+    z-index: 55;
+    color: black;
+    padding: 258px 26px 27px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Sol_Note {
+    position: relative;
+    z-index: 56;
+    color: black;
+    padding: 258px 27px 27px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.La_Note {
+    position: relative;
+    z-index: 58;
+    color: black;
+    padding: 258px 27px 27px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Si_Note {
+    position: relative;
+    z-index: 60;
+    color: black;
+    padding: 258px 27px 27px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.Cs_Note {
+    position: absolute;
+    z-index: 52;
+    left:40px;
+    padding: 180px 20px 20px 18px;
+    background-color: black;
+    color: White;
+    border-color: red;
+    cursor: pointer;
+}
+
+
+.Ds_Note {
+    position: absolute;
+    z-index: 54;
+    left: 100px;
+    padding: 180px 20px 20px 18px;
+    background-color: black;
+    color: White;
+    border-color: red;
+    cursor: pointer;
+}
+
+
+.Fs_Note {
+    position: absolute;
+    z-index: 57;
+    left: 220px;
+    padding: 180px 20px 20px 18px;
+    background-color: black;
+    color: White;
+    border-color: red;
+    cursor: pointer;
+}
+
+
+.Gs_Note {
+    position: absolute;
+    z-index: 59;
+    left: 280px;
+    padding: 180px 20px 20px 18px;
+    background-color: black;
+    color: White;
+    border-color: red;
+    cursor: pointer;
+}
+
+.Bb_Note {
+    position: absolute;
+    z-index: 61;
+    left: 340px;
+    padding: 180px 20px 20px 18px;
+    background-color: black;
+    color: White;
+    border-color: red;
+    cursor: pointer;
+}

@@ -1,0 +1,159 @@
+<!-- Page Principale -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu()">Compositeurs</a></li> <!-- onglets du header -->
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('black', '', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="lyrics/index.html">Paroles</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box">
+        <div class="main-text"><h1>La Musique</h1>
+            <p><em> « La vie sans musique est tout simplement une erreur, un calvaire, un exil.» <br>Friedrich Nietzsche</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="black-button" style="font-size: 17px;"
+                        onclick="document.getElementById('Liste-Histoire').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});">
+                    <!-- Bouton de scrolling -->
+                    <img src="assets/note.png" alt="note"
+                         style="margin-right: 15px;">L'Histoire
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="Liste-Histoire">
+        <div class="SectionInner">
+            <div class="SectionImg"><img src="assets/clavecin.png"
+                                         alt="Baroques"></div>
+            <div class="SectionText"><h1>Les Baroques</h1>
+                <p>Le baroque couvre une grande période dans l’histoire de la musique et de l'opéra. Il s’étend du début
+                    du
+                    XVIIe siècle jusqu'au milieu du XVIIIe siècle, de façon plus ou moins uniforme selon les pays. De
+                    façon
+                    nécessairement schématique, l’esthétique et l’inspiration baroques succèdent à celles de la
+                    Renaissance,
+                    apogée du contrepoint et de la polymélodie, et précèdent celles du classicisme, naissance d'éléments
+                    discursifs et rationnels, comme la phrase musicale ponctuée comme dans l'architecture. Les « figures
+                    »
+                    musicales baroques sont soutenues par une basse continue très stable. Nous pouvons dire que nous
+                    sommes
+                    à la jonction entre contrepoint et harmonie.</p></div>
+        </div>
+    </section>
+    <section class="Section">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Classique</h1>
+                <p>La musique classique fait référence à la musique de la période classique écrite entre le
+                    milieu du XVIIIe siècle et l'avènement de la musique romantique dans les années 1820. Une autre
+                    manière
+                    de définir ce type de musique est d'évoquer la tradition écrite, qui est moins présente ou
+                    complètement
+                    absente dans les musiques populaires. Les musiques savantes se transmettent généralement par l'écrit
+                    (la
+                    partition), les musiques populaires se transmettant le plus souvent par l'oral.</p></div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img src="assets/violon.png"
+                                                               alt="Classique"></div>
+
+        </div>
+    </section>
+    <section class="Section">
+        <div class="SectionInner">
+            <div class="SectionImg" style="flex: 60 1 0;"><img src="assets/piano.png"
+                                                               alt="Romantique"></div>
+            <div class="SectionText" style="flex: 40 1 0;"><h1>Romantique</h1>
+                <p>L'expression musique romantique désigne un type de musique qui domine en Europe tout au long du XIXe
+                    siècle. Ce courant musical aux formes variées qui met au premier plan l'expression de l'émotion
+                    s'inscrit dans le mouvement esthétique européen du romantisme qui touche les arts et la littérature
+                    sous
+                    l'influence de l'Angleterre et de l'Allemagne où s'approfondit une nouvelle sensibilité à partir de
+                    la
+                    fin du XVIIIe siècle. De nombreux compositeurs célèbres s'illustreront dans cette longue période
+                    aussi
+                    bien dans la musique instrumentale et orchestrale que dans l'art lyrique et vocal.</p></div>
+        </div>
+    </section>
+    <section class="Section">
+        <div class="SectionInner">
+            <div class="SectionText"><h1>Jazz</h1>
+                <p>Le jazz est un genre musical originaire du Sud des États-Unis, créé à la fin du XIXe siècle et au
+                    début
+                    du XXe siècle au sein des communautés afro-américaines. Avec plus de cent ans d'existence, du
+                    ragtime au
+                    jazz actuel, il recouvre de nombreux sous-genres marqués par un héritage de la musique
+                    euro-américaine
+                    et afro-américaine, et conçus pour être joués en public. Il émerge à partir d'autres genres
+                    musicaux,
+                    dont le ragtime, la marche, le negro spiritual et le blues, et comporte des caractéristiques telles
+                    que
+                    l'utilisation fréquente de l'improvisation, de la polyrythmie, de la syncope, du shuffle, du scat et
+                    des
+                    notes bleues. En route, il emprunte de nombreux éléments à la musique populaire américaine (en) et à
+                    la
+                    tradition des brass bands. Couramment associé aux cinq instruments emblématiques du jazz — le
+                    saxophone,
+                    la trompette, le trombone, la clarinette et le piano —, le jazz mobilise cependant un grand nombre
+                    d'instruments différents, dont la guitare, la batterie, et la contrebasse.</p></div>
+            <div class="SectionImg"><img src="assets/trompette.png"
+                                         alt="Jazz"></div>
+        </div>
+    </section>
+
+    <section class="Section">
+        <div class="SectionInner">
+            <div class="SectionImg"><img src="assets/guitare.png"
+                                         alt="Rock"></div>
+            <div class="SectionText"><h1>Rock</h1>
+                <p>Le rock est un genre musical apparu dans les années 1950 aux États-Unis et qui s'est développé en
+                    différents sous-genres à partir des années 1960, notamment aux États-Unis et au Royaume-Uni. Il
+                    prend
+                    ses racines dans le rock 'n' roll des années 1940 et 1950, lui-même grandement influencé par le
+                    rhythm
+                    and blues et la country. Le rock a également incorporé des éléments provenant d'autres genres dont
+                    la
+                    folk, le blues, le jazz et la musique classique. Le terme « rock » est aujourd'hui utilisé comme un
+                    terme générique incluant des formes artistiques comme la pop music, la musique soul. Son influence
+                    culturelle est désormais prééminente dans l'industrie musicale, et se diffuse également dans
+                    d'autres
+                    arts (cinéma, bande dessinée, mode vestimentaire).</p></div>
+        </div>
+    </section>
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">Cookies</a></li>
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+
+<div id="CookieSecure">  <!-- popup cookie -->
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+</body>
+</html>
