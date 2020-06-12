@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="../scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('#c4302b', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('#c4302b', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box" id="scroll">
+        <div class="main-text"><h1>Guns N' Roses</h1>
+            <p><em>«Thanks, but I'm not God. If I were God, three quarters of you would be girls, and the rest would be
+                pizza and beer.» <br>Axl Rose.</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="red-button" style="font-size: 17px;"
+                        onclick="document.getElementById('guns').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
+                    Biographie
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="guns">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Guns N' Roses</h1>
+                <p>Guns N' Roses (GNR) est un groupe américain de hard rock, originaire de Los Angeles, en Californie.
+                    Formé en 1985, il se compose du chanteur Axl Rose, des guitaristes Slash et Izzy Stradlin, du
+                    bassiste Duff McKagan et du batteur Steven Adler. Aujourd'hui, le groupe est composé des trois
+                    membres originaux dont Axl, Slash et Duff s'ajoutant a ceux-ci Dizzy Reed, Richard Fortus, Melissa
+                    Reese et Frank Ferrer. Le groupe est devenu en peu d'années l'un des groupes de hard rock les plus
+                    populaires, avec plus de 100 millions d'albums vendus dans le monde, dont 45 millions aux
+                    États-Unis.<br>L'album Appetite for Destruction (1987) recense plus de 30 millions d'exemplaires
+                    vendus et demeure l'un des albums plus vendus de l'histoire. Issue de cet album, la chanson Sweet
+                    Child O' Mine atteint la première place du Billboard Hot 100. En 1991, le groupe sort deux albums
+                    simultanément, Use Your Illusion I et II. <br>
+                    <iframe src="https://open.spotify.com/embed/track/3YRCqOhFifThpSRFJ1VWFM" width="500" height="80"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br><em style="font-size: 15px;">November Rain, Guns N' Roses</em>
+                </p>
+            </div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://images-na.ssl-images-amazon.com/images/I/71H9ZR6EGFL._SY355_.jpg   "
+                    alt="Classique"></div>
+        </div>
+    </section>
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+
+</body>
+</html>

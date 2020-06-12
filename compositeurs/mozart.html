@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="../scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('#c4302b', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('#c4302b', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box" id="scroll">
+        <div class="main-text"><h1>Wolfgang Amadeus Mozart</h1>
+            <p><em> « Le vrai génie sans coeur est un non-sens. Car ni intelligence élevée, ni imagination, ni toutes
+                deux ensemble ne font le génie.<br> Amour ! Amour ! Amour ! Voilà l'âme du génie. ».</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="red-button" style="font-size: 17px;"
+                        onclick="document.getElementById('mozart').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
+                    Biographie
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="mozart">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Mozart</h1>
+                <p>Wolfgang Amadeus Mozart ou Johannes Chrysostomus Wolfgangus Theophilus Mozart1 est un compositeur
+                    classique né à Salzbourg (principauté du Saint-Empire romain germanique) le 27 janvier 1756 et mort
+                    à Vienne le 5 décembre 17912.
+
+                    Mort à trente-cinq ans, il laisse une œuvre impressionnante (893 œuvres sont répertoriées dans le
+                    catalogue Köchel), qui embrasse tous les genres musicaux de son époque. Selon le témoignage de ses
+                    contemporains, il était, au piano comme au violon, un virtuose.
+
+                    On reconnaît généralement qu'il a porté à un point de perfection le concerto, la symphonie, et la
+                    sonate, qui devinrent après lui les principales formes de la musique classique, et qu'il fut l'un
+                    des plus grands maîtres de l'opéra. Son succès ne s'est jamais démenti. Son nom est passé dans le
+                    langage courant comme synonyme de génie, de virtuosité et de maîtrise parfaite.<br><br>
+                    <iframe src="https://open.spotify.com/embed/track/1GOjdj2pzQrVnC7Qbe7IiF" width="500" height="80"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br><em style="font-size: 15px;">Sonate pour piano nº 16, Allegro, Wolfgang Amadeus Mozart</em>
+                </p>
+            </div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Wolfgang-amadeus-mozart_1.jpg/800px-Wolfgang-amadeus-mozart_1.jpg"
+                    alt="Classique"></div>
+        </div>
+    </section>
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+
+</body>
+</html>

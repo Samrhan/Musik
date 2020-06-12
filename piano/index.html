@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Musik</title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <link rel="stylesheet" href="piano.css" type="text/css">
+    <script type="text/javascript" src="../scripts.js"></script>
+</head>
+
+<body style="overflow-y: hidden;" id="scroll">
+<header class="pannel-onglets"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav class="liste-onglets">
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('black', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('black', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<div class="main-box" onmouseover="disable_menu()">
+    <div class="main-text"><h1>Piano Interactif</h1>
+        <div id="piano">
+            <div class="notes">
+                <button class="Cs_Note" onClick="play_sound('do2d')"></button>
+                <button class="Ds_Note" onClick="play_sound('re2d')"></button>  <!-- Touches du piano-->
+                <button class="Fs_Note" onClick="play_sound('fa2')"></button>
+                <button class="Gs_Note" onClick="play_sound('sol2d')"></button>
+                <button class="Bb_Note" onClick="play_sound('la2d')"></button>
+                <button class="Do_Note" onClick="play_sound('do2')"></button>
+                <button class="Re_Note" onClick="play_sound('re2')"></button>
+                <button class="Mi_Note" onClick="play_sound('mi2')"></button>
+                <button class="Fa_Note" onClick="play_sound('mi2d')"></button>
+                <button class="Sol_Note" onClick="play_sound('sol2')"></button>
+                <button class="La_Note" onClick="play_sound('la2')"></button>
+                <button class="Si_Note" onClick="play_sound('si2')"></button>
+            </div>
+            <div class="notes">
+                <button class="Cs_Note" onClick="play_sound('do3d')"></button>
+                <button class="Ds_Note" onClick="play_sound('re3d')"></button>  <!-- Touches du piano-->
+                <button class="Fs_Note" onClick="play_sound('fa3')"></button>
+                <button class="Gs_Note" onClick="play_sound('sol3d')"></button>
+                <button class="Bb_Note" onClick="play_sound('la3d')"></button>
+                <button class="Do_Note" onClick="play_sound('do3')"></button>
+                <button class="Re_Note" onClick="play_sound('re3')"></button>
+                <button class="Mi_Note" onClick="play_sound('mi3')"></button>
+                <button class="Fa_Note" onClick="play_sound('mi3d')"></button>
+                <button class="Sol_Note" onClick="play_sound('sol3')"></button>
+                <button class="La_Note" onClick="play_sound('la3')"></button>
+                <button class="Si_Note" onClick="play_sound('si3')"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+</body>
+</html>

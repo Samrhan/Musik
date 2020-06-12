@@ -1,0 +1,110 @@
+<!-- Page Principale -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu()">Compositeurs</a></li> <!-- onglets du header -->
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('black', '', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="lyrics/index.html">Paroles</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-text"><h1>Qui sommes-nous ?</h1>
+
+
+    </div>
+    <section class="Section">
+        <div class="SectionInner">
+            <div class="SectionImg"><img
+                    src="https://cdn.discordapp.com/attachments/647422983991984141/720958727213023232/moi.png"
+                    alt="samuel"></div>
+            <div class="SectionText"><h1>Samuel Bader</h1>
+                <p>Samuel le toulonais, 19 ans, bobo depuis sa naissance, il a le rouge qui coule dans les veines ! Ce
+                    petite homme, passionné de jeux videos et musiques s'est joint à ses deux potes à la compote :
+                    valou le loup et erwan le breton. Qu'importe nos horizons nous avions un projet commun : le
+                    site internet. Nous nous sommes rassemblés très rapidement afin de dispatcher les taches à faire et
+                    nous sommes très fiers de notre site</p>
+                <p>Il s'est chargé de l'intégration de l'API Youtube et du Menu déroulant</p></div>
+        </div>
+    </section>
+    <section class="Section">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Valentin ENCOGNERE</h1>
+                <p>Valou le loup, 19 ans, sudiste depuis sa naissance, il a le ricard qui coule dans les veines ! Ce
+                    petite homme, passionné de jeux videos et musiques s'est joint à ses deux potes à la compote :
+                    samuel le toulonais et erwan le breton. Qu'importe nos horizons nous avions un projet commun : le
+                    site internet.
+                    Nous nous sommes rassemblés très rapidement afin de dispatcher les taches à faire et nous sommes
+                    très fiers
+                    de notre site</p>
+                <p>Il s'est chargé de l'intégration de l'API pour les paroles et du design principal des pages</p></div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://cdn.discordapp.com/attachments/710854360795578409/720546996573962260/unknown.png"
+                    alt="valentin"></div>
+
+        </div>
+    </section>
+    <section class="Section">
+        <div class="SectionInner">
+            <div class="SectionImg" style="flex: 60 1 0;"><img
+                    src="https://cdn.discordapp.com/attachments/710854360795578409/720957213157490719/69820039_2259373407637850_7148739877532598272_n.jpg"
+                    alt="erwan"></div>
+            <div class="SectionText" style="flex: 40 1 0;"><h1>Erwan OLIVIER</h1>
+                <p>Erwan le breton, 19 ans, breton depuis sa naissance, il a le cidre qui coule dans les veines ! Ce
+                    petite homme, passionné de jeux videos et musiques s'est joint à ses deux potes à la compote :
+                    samuel le toulonais et valou le loup. Qu'importe nos horizons nous avions un projet commun : le
+                    site internet sur le sujet de la musique. Nous avons également un point en commun : EFREI Paris,
+                    notre école
+                    Nous nous sommes rassemblés très rapidement afin de dispatcher les taches à faire et nous sommes
+                    très fiers
+                    de notre site.</p>
+                <p>Il s'est chargé de l'intégration de l'API Wikipédia et des popups</p></div>
+        </div>
+    </section>
+    <section class="Section">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 40 1 0;"><h1>Sources</h1>
+                <p>Le Contenu des pages vient de Wikipédia, les images de différentes source, et les embeds pour la
+                    musique de Spotify. Il faut par ailleur un compte pour écouter la musique dans son itnégralité. <br><br>
+                    <em>Le site est entièrement codé en HTML/CSS/Javascript, sans aucun frameworks ni bibliothèques.</em></p>
+            </div>
+        </div>
+    </section>
+
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">  <!-- popup cookie -->
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+</body>
+</html>

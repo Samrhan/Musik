@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="../scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('black', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('black', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box" id="scroll">
+        <div class="main-text"><h1>Franz Liszt</h1>
+            <p><em> « Les arts sont le plus sûr moyen de se dérober au monde ; ils sont aussi le plus sûr moyen de
+                s'unir avec lui... ».</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="black-button" style="font-size: 17px;"
+                        onclick="document.getElementById('liszt').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
+                    Biographie
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="liszt">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Liszt</h1>
+                <p>Franz Liszt (Liszt Ferenc en hongrois) est un compositeur, transcripteur et pianiste virtuose
+                    hongrois né le 22 octobre 1811 à Doborján1, en Hongrie (empire d'Autriche) et mort le 31 juillet
+                    1886 à Bayreuth, en Bavière (Empire allemand).
+
+                    Liszt est le père de la technique pianistique moderne et du récital. Avec lui naissent
+                    l'impressionnisme au piano, le piano orchestral — Mazeppa, la quatrième Étude d'exécution
+                    transcendante — et le piano littéraire — les Années de pèlerinage. Innovateur et promoteur de l'«
+                    œuvre d'art de l'avenir » (la « musique de l'avenir » étant une invention des journalistes de
+                    l'époque), Liszt influença et soutint plusieurs figures majeures du xixe siècle musical : Hector
+                    Berlioz, Richard Wagner, César Franck, Camille Saint-Saëns, Bedřich Smetana, Edvard Grieg et
+                    Alexandre Borodine. Aussi féconde que diverse, son œuvre a inspiré plusieurs courants majeurs de la
+                    musique moderne, qu'il s'agisse de l'impressionnisme, de la renaissance du folklore, de la musique
+                    de film ou du dodécaphonisme sériel.
+
+                    <iframe src="https://open.spotify.com/embed/track/2Hnurh1BcigGbCGFOb4Uid" width="500" height="80"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br><em style="font-size: 15px;">La Campanella, Franz Liszt</em><br><br>
+                </p>
+            </div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Franz_Liszt.jpg/800px-Franz_Liszt.jpg"
+                    alt="Classique"></div>
+
+        </div>
+    </section>
+
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="../scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('black', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('black', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box" id="scroll">
+        <div class="main-text"><h1>Ludwig van Beethoven</h1>
+            <p><em> « N'est-ce pas, Hummel, que j'avais du talent? ».</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="black-button" style="font-size: 17px;"
+                        onclick="document.getElementById('beethov').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
+                    Biographie
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="beethov">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Beethoven</h1>
+                <p>Ludwig van Beethoven [ludvig van betɔvœn]a (en allemand : [ˈluːtvɪç fan ˈbeːtˌhoːfn̩]b Écouter) est
+                    un compositeur et pianiste allemand né à Bonn le 15 ou 16 décembre 1770 et mort à Vienne le 26 mars
+                    1827.
+                    <br>
+                    Dernier grand représentant du classicisme viennois (après Gluck, Haydn et Mozart), Beethoven a
+                    préparé l’évolution vers le romantisme en musique et influencé la musique occidentale pendant une
+                    grande partie du xixe siècle. Inclassable (« Vous me faites l’impression d’un homme qui a plusieurs
+                    têtes, plusieurs cœurs, plusieurs âmes » lui dit Haydn vers 1793c), son art s’est exprimé à travers
+                    différents genres musicaux, et bien que sa musique symphonique soit la principale source de sa
+                    popularité, il a eu un impact également considérable dans l’écriture pianistique et dans la musique
+                    de chambre.
+
+                    <iframe src="https://open.spotify.com/embed/track/68Um44MkkQJqPDOXN5q21c" width="500" height="80"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br><em style="font-size: 15px;">Sonate pour piano nº 14,« Sonate au Clair de lune », Ludwig van
+                        Beethoven</em><br><br>
+
+                </p>
+            </div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/800px-Beethoven.jpg"
+                    alt="Classique"></div>
+
+        </div>
+    </section>
+
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="../scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('black', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('black', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box" id="scroll">
+        <div class="main-text"><h1>The Beatles</h1>
+            <p><em> « When I find myself in times of trouble<br>
+                Mother Mary comes to me<br>
+                Speaking words of wisdom, let it be.
+                ».</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="black-button" style="font-size: 17px;"
+                        onclick="document.getElementById('beatles').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
+                    Biographie
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="beatles">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>The Beatles</h1>
+                <p>The Beatles [ðə ˈbiːtəlz] est un groupe de pop et de rock'n'roll, originaire de Liverpool, en
+                    Angleterre. Le noyau du groupe se forme avec les Quarrymen fondés par John Lennon en 1957, il adopte
+                    son nouveau nom en 1960 et, à partir de 1962, prend sa configuration définitive, composé de John
+                    Lennon, Paul McCartney, George Harrison et, le dernier à se joindre, Ringo Starr. Il est considéré
+                    comme le groupe le plus populaire et influent de l'histoire du rock. En dix ans d'existence et
+                    seulement sept ans d'enregistrement (de 1962 à 1969), les Beatles ont enregistré douze albums
+                    originaux et composé près de 200 chansons majoritairement écrites par le tandem Lennon/McCartney,
+                    dont le succès dans l'histoire de l'industrie discographique reste inégalé.
+                    <iframe src="https://open.spotify.com/embed/track/7iN1s7xHE4ifF5povM6A48" width="500" height="80"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br><em style="font-size: 15px;">Let it be, The Beatles</em>
+                </p>
+            </div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://phototrend.fr/wp-content/uploads/2017/06/Beatles_Abbey_Road_cover-940x940.jpg"
+                    alt="Classique"></div>
+
+        </div>
+    </section>
+
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+
+</body>
+</html>

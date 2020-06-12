@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Musik</title>
+    <script type="text/javascript" src="../scripts.js"></script>
+
+</head>
+<body id="body">
+<header class="pannel-onglets" id="header"><span class="name"><a href="../index.html">MUSIK</a></span>
+    <nav>
+        <ul class="liste">
+            <li class="onglet" id="ong_compositeurs">
+                <a onmouseover="display_scrolling_menu('black', '../')">Compositeurs</a></li>
+            <li class="onglet" id="ong_groupes">
+                <a onmouseover="display_scrolling_menu('black', '../', 'ong_groupes')">Groupes</a></li>
+            <li class="onglet" onmouseover="disable_menu()"><a href="../piano/index.html">Piano</a></li>
+            <li class="onglet"><a href="../youtube/index.html">Youtube</a></li>
+            <li class="onglet"><a href="../wikipedia/index.html">Wikipedia</a></li>
+            <li class="onglet"><a href="../lyrics/index.html">Paroles</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="scroll-windows" onmouseover="disable_menu()">
+    <div class="main-box" id="scroll">
+        <div class="main-text"><h1>Jean-Sébastien Bach</h1>
+            <p><em> « Le but de la musique devrait n'être que la gloire de Dieu et le délassement des âmes. <br>Si l'on
+                ne
+                tient pas compte de cela, il ne s'agit plus de musique mais de nasillements et beuglements diaboliques.
+                ».</em>
+            </p>
+            <div class="main-button">
+                <button type="button" id="black-button" style="font-size: 17px;"
+                        onclick="document.getElementById('bach').scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});">
+                    Biographie
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <section class="Section" id="bach">
+        <div class="SectionInner">
+            <div class="SectionText" style="flex: 42 1 0;"><h1>Bach</h1>
+                <p>Jean-Sébastien Bach [ ʒɑ̃sebastjɛ̃ bak] (en allemand : Johann Sebastian Bach [ˈjoːhan zeˈbasti̯an
+                    baχ]), né à Eisenach (Duché de Saxe-Weimar) le 21 mars 1685 (31 mars 1685 dans le
+                    calendrier grégorien), mort à Leipzig le 28 juillet 1750, est un musicien, notamment organiste, et
+                    compositeur allemand.
+
+                    Membre le plus éminent de la famille Bach — la famille de musiciens la plus prolifique de l'histoire
+                    —, sa carrière s'est entièrement déroulée en Allemagne centrale, dans le cadre de sa région natale,
+                    au service de petites municipalités, de cours princières sans importance politique, puis du conseil
+                    municipal de Leipzig qui lui manifestait peu de considération : il n'a ainsi jamais pu obtenir un
+                    poste à la mesure de son génie et de son importance dans l'histoire de la musique occidentale,
+                    malgré la considération de certains souverains allemands, tel Frédéric le Grand, pour le « Cantor de
+                    Leipzig ».
+
+                    <iframe src="https://open.spotify.com/embed/track/21f4M7iWdQTznF0fTAO4A3" width="500" height="80"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br><em style="font-size: 15px;">Prélude et fugue en ut majeur (BWV 846), Jean-Sébastien Bach</em>
+                </p>
+            </div>
+            <div class="SectionImg" style="flex: 58 1 0;"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Johann_Sebastian_Bach.jpg"
+                    alt="Classique"></div>
+
+        </div>
+    </section>
+
+</div>
+<footer>
+    <ul class="footer">
+        <li class="footer-item"><a href="../faq.html">Qui Sommes-nous ?</a></li>  <!-- onglets du footer -->
+        <li class="footer-item"><a onclick="show_sociaux()">Réseaux Sociaux</a></li>
+        <li class="footer-item"><a onclick="show_rgpd()">COOKIES</a></li>
+
+    </ul>
+</footer>
+<div id="popup" class="popup">
+    <div onclick="hide_sociaux()" class="sociaux_background"></div>
+    <a class="sociaux_close" onclick="hide_sociaux()"></a>
+    <div class="sociaux_windows" id="reseaux-popup"><h1 style="text-align: center">Réseaux Sociaux</h1>
+    </div>
+</div>
+<div id="CookieSecure" style="display: none">
+    <div><span>Nous n'utilisons pas de Cookies<br> En continuant votre navigation, vous êtes libre d'aller ou vous voulez, on vous jugera pas.<br></span>
+        <a onclick="hide_rgpd()" id="okcookie">Continuer</a></div>
+</div>
+
+</body>
+</html>
