@@ -1,5 +1,5 @@
 // Contient toutes les fonctions javascripts
-const key = "AIzaSyBuVALnsrj1QfjbfzlxMSSW0k51QFcCp9k"; // Token : NE PAS PARTAGER
+const key = "TOKEN"; // Token : NE PAS PARTAGER
 
 
 // Fonctions utilitaires
