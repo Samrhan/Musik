@@ -230,6 +230,12 @@ header {
     flex-direction: row-reverse; /*il suffirait d'inverser l'image et le texte en html*/
 }
 
+@media (max-width: 1000px) { /* Affichage mobile*/
+    .SectionInner {
+        flex-direction: column;
+    }
+}
+
 .SectionImg {
     line-height: 23px;
     flex: 1;
@@ -427,10 +433,7 @@ footer {
     width: 10%;
     position: fixed;
     font-size: 0.875rem;
-    box-sizing: inherit;
-    color: rgba(0, 0, 0, 0.87);
     border-radius: 4px;
-    transform-origin: center bottom;
     z-index: -1;
 }
 
@@ -474,6 +477,12 @@ footer {
     margin: 12px;
     height: 30%;
     width: 10vw;
+}
+@media (max-width: 1000px) { /* Affichage mobile*/
+    .sociaux_windows {
+        height: 30%;
+        width: 60vw;
+    }
 }
 
 .reseaux{
