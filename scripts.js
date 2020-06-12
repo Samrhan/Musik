@@ -74,7 +74,7 @@ function show_sociaux() {
     img[0].alt = 'github';
     let name = [];
     name.push(document.createElement('a'));
-    name[0].href = "https://github.com/Samrhan/ProjetWebMusique";
+    name[0].href = "https://github.com/Samrhan/Musik";
     name[0].target = "_blank";
     name[0].append(document.createTextNode("Github"));
     for(let i =0; i < tab.length; i++){
