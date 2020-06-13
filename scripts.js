@@ -1,5 +1,5 @@
 // Contient toutes les fonctions javascripts
-const key = "TOKEN"; // Token : NE PAS PARTAGER
+const key = "AIzaSyBuVALnsrj1QfjbfzlxMSSW0k51QFcCp9k"; // Token : NE PAS PARTAGER
 
 
 // Fonctions utilitaires
@@ -359,7 +359,7 @@ async function search_lyrics() {
                     titre.appendChild(document.createTextNode(res.content[0].title));
                     div_text.appendChild(titre);
                     let text = document.createElement('p');
-                    text = res.content[0].lyrics.replace(/\n/g, "<br>"); // De la même manière que plus haut sinon on ne peut pas mettre de retour à la ligne
+                    text.innerHTML = res.content[0].lyrics.replace(/\n/g, "<br>"); // De la même manière que plus haut sinon on ne peut pas mettre de retour à la ligne
                     let scroll = document.getElementById("scroll");
                     scroll.appendChild(section);
                     section.appendChild(div);
